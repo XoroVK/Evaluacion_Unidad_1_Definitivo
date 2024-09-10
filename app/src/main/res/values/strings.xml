@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Evaluacion Unidad 1</string>
+    <string name="app_tittle">Task Master</string>
+    <string name="splash_description">Organiza tus tareas de manera fácil y eficiente.</string>
+    <string name="splash_description2">Rapido y sin pagar</string>
+    <string name="splash_button">Comenzar</string>
+    <string name="logo_desc">Logo de TaskMaster</string>
+    <string name="splash_title">¡Bienvenido a TaskMaster!</string>
+    <string-array name="spinner_options">
+        <item>Opción 1</item>
+        <item>Opción 2</item>
+        <item>Opción 3</item>
+    </string-array>
+</resources>

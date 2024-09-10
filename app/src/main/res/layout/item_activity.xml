@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/activity_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_activity_icon" />
+
+        <TextView
+            android:id="@+id/activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/activity_icon"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Nombre de la Actividad" />
+
+        <TextView
+            android:id="@+id/activity_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_name"
+            android:layout_toEndOf="@id/activity_icon"
+            android:layout_marginStart="16dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="Descripción de la actividad" />
+
+        <CheckBox
+            android:id="@+id/activity_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="122dp"
+            android:layout_marginEnd="4dp"
+            android:text="Completado" />
+
+        <ProgressBar
+            android:id="@+id/activity_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="335dp"
+            android:layout_height="29dp"
+            android:layout_below="@id/activity_description"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="8dp"
+            android:progress="50" />
+        <TextView
+            android:id="@+id/activity_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_progress"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentEnd="true"
+            android:text="50%"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/rating_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_progress_text"
+            android:layout_marginTop="-21dp"
+            android:text="¿Cómo calificarías esta Actividad?"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/activity_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating_message"
+            android:layout_marginTop="8dp"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="3" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
